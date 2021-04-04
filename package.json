@@ -1,0 +1,26 @@
+{
+  "name": "httpback",
+  "version": "1.0.0",
+  "description": "HTTP backend",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "stop": "forever stopall"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "npeplov",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^3.0.4",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.2"
+  }
+}
